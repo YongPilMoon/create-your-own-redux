@@ -1,5 +1,5 @@
 # create-your-own-redux
-
+위 코드는 [Understand and Implement Your Own Redux](https://buttercms.com/blog/understand-and-implement-your-own-redux/) 글을 참고하여 작성하였습니다.
 ## CreateStore
 
 `createStore`함수는 `reducer`와 초기상태(`initialState`)를 인자로 받습니다.
