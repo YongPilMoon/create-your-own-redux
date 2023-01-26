@@ -21,6 +21,11 @@ function createStore<S>(reducer: Reducer, initialState: S) {
 
   function subscribe(fn: Listener) {
     listeners.push(fn);
+
+    // listner를 등록 해제 할 수 있도록 unsubscribe 함수 반환
+    return () => {
+      listeners = listeners.filter((l) => l !== fn);
+    };
   }
 
   const store = {
